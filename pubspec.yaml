@@ -1,0 +1,64 @@
+name: talan_parking_externe
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+
+
+environment:
+  sdk: '3.5.2'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.11.0+2
+  loading_animation_widget:
+  image:
+  path: ^1.9.0
+  permission_handler: ^11.3.1
+  tflite_v2: ^1.0.0
+  sensors_plus:
+  hive:
+  hive_flutter:
+  url_launcher:
+  shared_preferences:
+  json_annotation:
+  file_picker:
+  csv:
+  cupertino_icons: ^1.0.8
+  camera_android: ^0.10.9+11
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_tesseract_ocr:
+  hive_generator:
+  build_runner:
+  json_hive_generator:
+  json_serializable:
+  flutter_launcher_icons:
+  flutter_lints: ^4.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  assets:
+    - assets/logo-talan.png
+    - assets/detect_plate.tflite
+    - assets/detect_plate.txt
+    - assets/tessdata_config.json
+    - assets/tessdata/
+    - assets/data.json
+  uses-material-design: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo-talan.png" # Path to icon
